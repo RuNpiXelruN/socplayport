@@ -3,14 +3,14 @@
 </div>
 <div class="row">
     <div class="col-md-4">
-      <%= link_to "Admin Sign up", new_user_registration_path, class: 'btn btn-primary btn-lg btn-block' %>
+      <%= link_to "Admin Sign up", new_user_registration_path(plan: @admin_plan.id), class: 'btn btn-primary btn-lg btn-block' %>
     </div>
 
     <div class="col-md-4">
-      <%= link_to "Basic user Sign up", new_user_registration_path, class: 'btn btn-success btn-lg btn-block' %>
+      <%= link_to "Basic user Sign up", new_user_registration_path(plan: @basic_plan.id), class: 'btn btn-success btn-lg btn-block' %>
     </div>
 
     <div class="col-md-4">
-        <%= link_to "Paid user sign-up", new_user_registration_path, class: 'btn btn-info btn-lg btn-block' %>
+        <%= link_to "Paid user sign-up", new_user_registration_path(plan: @paid_plan.id), class: 'btn btn-info btn-lg btn-block' %>
     </div>
 </div>
